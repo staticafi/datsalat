@@ -1,0 +1,89 @@
+{
+"magic": "sala",
+"version": "0.1",
+"system": "x86_64-pc-linux-gnu",
+"num_cpu_bits": 64,
+"name": "assign02",
+"entry_function": 1,
+"constants": [
+  "0000",
+  "ffff",
+  "a4709d3f",
+  "0000000000000000",
+  "00000000",
+  "feff",
+  "0300",
+  "90f900b9",
+  "4101000000000000"
+],
+"static": [
+  [ 8, [1,0] ],
+  [ 2, [1,0] ],
+  [ 8, [2,0] ],
+  [ 2, [2,0] ],
+  [ 8, [3,0] ],
+  [ 4, [3,0] ],
+  [ 8, [4,0] ],
+  [ 8, [4,0] ]
+],
+"functions": [
+  {
+    "name": [ "__sala_static_initializer__", [0,0] ],
+    "parameters": [
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ss", 0, 1, [1,0] ],
+          [ "ADDRESS", "n", "ss", 2, 3, [2,0] ],
+          [ "ADDRESS", "n", "ss", 4, 5, [3,0] ],
+          [ "ADDRESS", "n", "ss", 6, 7, [4,0] ],
+          [ "STORE", "n", "sc", 0, 0, [0,0] ],
+          [ "STORE", "n", "sc", 2, 1, [0,0] ],
+          [ "STORE", "n", "sc", 4, 2, [0,0] ],
+          [ "STORE", "n", "sc", 6, 3, [0,0] ],
+          [ "RET", "n", [0,0] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "main", [5,1] ],
+    "parameters": [
+      [ 8, [5,1] ]
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 2, [8,11] ],
+      [ 4, [0,0] ],
+      [ 2, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 3, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 4, [0,0] ],
+          [ "STORE", "n", "lc", 0, 4, [0,0] ],
+          [ "LOAD", "n", "ls", 2, 0, [8,11] ],
+          [ "STORE", "n", "ll", 1, 2, [8,9] ],
+          [ "STORE", "n", "sc", 0, 5, [9,7] ],
+          [ "STORE", "n", "sc", 2, 6, [10,7] ],
+          [ "STORE", "n", "sc", 4, 7, [11,7] ],
+          [ "STORE", "n", "sc", 6, 8, [12,21] ],
+          [ "STORE", "n", "pc", 0, 4, [13,5] ],
+          [ "RET", "n", [13,5] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  }
+],
+"external_variables": [
+],
+"external_functions": [
+]
+}

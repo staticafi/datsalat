@@ -1,0 +1,173 @@
+{
+"magic": "sala",
+"version": "0.1",
+"system": "x86_64-pc-linux-gnu",
+"num_cpu_bits": 64,
+"name": "halt",
+"entry_function": 2,
+"constants": [
+  "00000000",
+  "78",
+  "61000000",
+  "01000000",
+  "62000000"
+],
+"static": [
+],
+"functions": [
+  {
+    "name": [ "__sala_static_initializer__", [0,0] ],
+    "parameters": [
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [0,0] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "foo", [5,1] ],
+    "parameters": [
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [5,13] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "main", [7,1] ],
+    "parameters": [
+      [ 8, [7,1] ]
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 4, [11,5] ],
+      [ 1, [13,9] ],
+      [ 4, [13,9] ],
+      [ 1, [13,11] ],
+      [ 1, [15,9] ],
+      [ 4, [15,9] ],
+      [ 1, [15,11] ],
+      [ 4, [0,0] ],
+      [ 1, [0,0] ],
+      [ 8, [11,5] ],
+      [ 8, [11,5] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 9, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 10, [0,0] ],
+          [ "STORE", "n", "lc", 0, 0, [0,0] ],
+          [ "STORE", "n", "lc", 1, 1, [9,10] ],
+          [ "ADDRESS", "n", "ll", 11, 2, [11,5] ],
+          [ "ADDRESS", "n", "lf", 12, 1, [11,5] ],
+          [ "CALL", "n", "fll", 3, 11, 12, [11,5] ],
+          [ "LOAD", "n", "ll", 3, 1, [13,9] ],
+          [ "EXTEND", "s", "ll", 4, 3, [13,9] ],
+          [ "EQUAL", "u", "llc", 5, 4, 2, [13,11] ],
+          [ "BRANCH", "n", "l", 5, [13,9] ]
+        ],
+        "successors": [ 2, 1 ]
+      },
+      {
+        "instructions": [
+          [ "CALL", "n", "fc", 4, 3, [14,9] ],
+          [ "HALT", "n", [14,9] ]
+        ],
+        "successors": [ ]
+      },
+      {
+        "instructions": [
+          [ "LOAD", "n", "ll", 6, 1, [15,9] ],
+          [ "EXTEND", "s", "ll", 7, 6, [15,9] ],
+          [ "EQUAL", "u", "llc", 8, 7, 4, [15,11] ],
+          [ "BRANCH", "n", "l", 8, [15,9] ]
+        ],
+        "successors": [ 4, 3 ]
+      },
+      {
+        "instructions": [
+          [ "CALL", "n", "f", 5, [16,9] ],
+          [ "HALT", "n", [16,9] ]
+        ],
+        "successors": [ ]
+      },
+      {
+        "instructions": [
+          [ "STORE", "n", "pc", 0, 0, [18,5] ],
+          [ "RET", "n", [18,5] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "atexit", [0,0] ],
+    "parameters": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ]
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [0,0] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "exit", [0,0] ],
+    "parameters": [
+      [ 4, [0,0] ]
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [0,0] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "abort", [0,0] ],
+    "parameters": [
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [0,0] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  }
+],
+"external_variables": [
+],
+"external_functions": [
+  3,
+  4,
+  5
+]
+}

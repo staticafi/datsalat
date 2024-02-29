@@ -1,0 +1,71 @@
+{
+"magic": "sala",
+"version": "0.1",
+"system": "x86_64-pc-linux-gnu",
+"num_cpu_bits": 64,
+"name": "union01",
+"entry_function": 1,
+"constants": [
+  "00000000",
+  "0000000000000000",
+  "0100000000000000",
+  "0400000000000000",
+  "01000000",
+  "000000403333f33f"
+],
+"static": [
+],
+"functions": [
+  {
+    "name": [ "__sala_static_initializer__", [0,0] ],
+    "parameters": [
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [0,0] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "main", [13,1] ],
+    "parameters": [
+      [ 8, [13,1] ]
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [16,5] ],
+      [ 8, [16,7] ],
+      [ 8, [17,5] ],
+      [ 4, [0,0] ],
+      [ 16, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 5, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 6, [0,0] ],
+          [ "STORE", "n", "lc", 0, 0, [0,0] ],
+          [ "COPY", "n", "ll", 2, 1, [16,5] ],
+          [ "MOVEPTR", "n", "llcc", 3, 2, 2, 3, [16,7] ],
+          [ "STORE", "n", "lc", 3, 4, [16,9] ],
+          [ "COPY", "n", "ll", 4, 1, [17,5] ],
+          [ "STORE", "n", "lc", 4, 5, [17,7] ],
+          [ "STORE", "n", "pc", 0, 0, [18,3] ],
+          [ "RET", "n", [18,3] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  }
+],
+"external_variables": [
+],
+"external_functions": [
+]
+}

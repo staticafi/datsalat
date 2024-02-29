@@ -1,0 +1,197 @@
+{
+"magic": "sala",
+"version": "0.1",
+"system": "x86_64-pc-linux-gnu",
+"num_cpu_bits": 64,
+"name": "func_call00",
+"entry_function": 6,
+"constants": [
+  "01000000",
+  "33331340",
+  "00000000"
+],
+"static": [
+],
+"functions": [
+  {
+    "name": [ "__sala_static_initializer__", [0,0] ],
+    "parameters": [
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [0,0] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "foo", [1,1] ],
+    "parameters": [
+      [ 8, [1,1] ],
+      [ 4, [1,1] ],
+      [ 4, [1,1] ]
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 4, [3,12] ],
+      [ 4, [0,0] ],
+      [ 4, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 3, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 4, [0,0] ],
+          [ "STORE", "n", "lp", 0, 1, [0,0] ],
+          [ "STORE", "n", "lp", 1, 2, [0,0] ],
+          [ "LOAD", "n", "ll", 2, 0, [3,12] ],
+          [ "STORE", "n", "pl", 0, 2, [3,5] ],
+          [ "RET", "n", [3,5] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "bar", [6,1] ],
+    "parameters": [
+      [ 8, [6,1] ]
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 4, [8,13] ],
+      [ 4, [9,12] ],
+      [ 4, [0,0] ],
+      [ 8, [8,13] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 3, [0,0] ],
+          [ "ADDRESS", "n", "ll", 4, 1, [8,13] ],
+          [ "CALL", "n", "flcc", 1, 4, 0, 1, [8,13] ],
+          [ "STORE", "n", "ll", 0, 1, [8,9] ],
+          [ "LOAD", "n", "ll", 2, 0, [9,12] ],
+          [ "STORE", "n", "pl", 0, 2, [9,5] ],
+          [ "RET", "n", [9,5] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "zoo", [12,1] ],
+    "parameters": [
+      [ 4, [12,1] ]
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 4, [14,15] ],
+      [ 4, [14,25] ],
+      [ 4, [14,18] ],
+      [ 4, [14,11] ],
+      [ 4, [0,0] ],
+      [ 8, [14,11] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 5, [0,0] ],
+          [ "STORE", "n", "lp", 0, 0, [0,0] ],
+          [ "LOAD", "n", "ll", 1, 0, [14,15] ],
+          [ "LOAD", "n", "ll", 2, 0, [14,25] ],
+          [ "I2F", "s", "ll", 3, 2, [14,18] ],
+          [ "ADDRESS", "n", "ll", 6, 4, [14,11] ],
+          [ "CALL", "n", "flll", 1, 6, 1, 3, [14,11] ],
+          [ "RET", "n", [15,1] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "huh", [17,1] ],
+    "parameters": [
+    ],
+    "locals": [
+      [ 4, [19,9] ],
+      [ 8, [19,9] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 1, 0, [19,9] ],
+          [ "CALL", "n", "fl", 2, 1, [19,9] ],
+          [ "CALL", "n", "fl", 3, 0, [19,5] ],
+          [ "RET", "n", [20,1] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "hup", [22,1] ],
+    "parameters": [
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [27,7] ],
+      [ 4, [27,5] ],
+      [ 8, [0,0] ],
+      [ 8, [27,5] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 5, [0,0] ],
+          [ "ADDRESS", "n", "lf", 1, 2, [0,0] ],
+          [ "STORE", "n", "ll", 0, 1, [25,9] ],
+          [ "ADDRESS", "n", "lf", 2, 2, [0,0] ],
+          [ "STORE", "n", "ll", 0, 2, [26,9] ],
+          [ "LOAD", "n", "ll", 3, 0, [27,7] ],
+          [ "ADDRESS", "n", "ll", 6, 4, [27,5] ],
+          [ "CALL", "n", "ll", 3, 6, [27,5] ],
+          [ "RET", "n", [28,1] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "main", [30,1] ],
+    "parameters": [
+      [ 8, [30,1] ]
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 4, [32,5] ],
+      [ 4, [0,0] ],
+      [ 8, [32,5] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 2, [0,0] ],
+          [ "STORE", "n", "lc", 0, 2, [0,0] ],
+          [ "ADDRESS", "n", "ll", 3, 1, [32,5] ],
+          [ "CALL", "n", "fl", 2, 3, [32,5] ],
+          [ "STORE", "n", "pc", 0, 2, [33,5] ],
+          [ "RET", "n", [33,5] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  }
+],
+"external_variables": [
+],
+"external_functions": [
+]
+}

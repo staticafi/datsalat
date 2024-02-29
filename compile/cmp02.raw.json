@@ -1,0 +1,562 @@
+{
+"magic": "sala",
+"version": "0.1",
+"system": "x86_64-pc-linux-gnu",
+"num_cpu_bits": 64,
+"name": "cmp02",
+"entry_function": 9,
+"constants": [
+  "01",
+  "00",
+  "00000000",
+  "01",
+  "01000000"
+],
+"static": [
+],
+"functions": [
+  {
+    "name": [ "__sala_static_initializer__", [0,0] ],
+    "parameters": [
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [0,0] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "zoo", [3,1] ],
+    "parameters": [
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 1, [6,9] ],
+      [ 1, [6,9] ],
+      [ 1, [6,14] ],
+      [ 1, [6,14] ],
+      [ 1, [0,0] ],
+      [ 1, [6,7] ],
+      [ 1, [0,0] ],
+      [ 1, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 8, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 9, [0,0] ],
+          [ "LOAD", "n", "ll", 2, 0, [6,9] ],
+          [ "AND", "n", "llc", 3, 2, 0, [6,9] ],
+          [ "BRANCH", "n", "l", 3, [6,11] ]
+        ],
+        "successors": [ 3, 1 ]
+      },
+      {
+        "instructions": [
+          [ "LOAD", "n", "ll", 4, 1, [6,14] ],
+          [ "AND", "n", "llc", 5, 4, 0, [6,14] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 4 ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "ll", 7, 6, [6,7] ],
+          [ "STORE", "n", "ll", 0, 7, [6,7] ],
+          [ "RET", "n", [7,1] ]
+        ],
+        "successors": [ ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "lc", 6, 1, [0,0] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 2 ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "ll", 6, 5, [0,0] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 2 ]
+      }
+    ]
+  },
+  {
+    "name": [ "zul", [9,1] ],
+    "parameters": [
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 4, [13,16] ],
+      [ 1, [13,9] ],
+      [ 1, [13,7] ],
+      [ 1, [0,0] ],
+      [ 4, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 5, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 6, [0,0] ],
+          [ "LOAD", "n", "ll", 2, 1, [13,16] ],
+          [ "UNEQUAL", "u", "llc", 3, 2, 2, [13,9] ],
+          [ "COPY", "n", "ll", 4, 3, [13,7] ],
+          [ "STORE", "n", "ll", 0, 4, [13,7] ],
+          [ "RET", "n", [14,1] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "zop", [16,1] ],
+    "parameters": [
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 1, [19,10] ],
+      [ 1, [19,10] ],
+      [ 1, [19,9] ],
+      [ 1, [19,7] ],
+      [ 1, [0,0] ],
+      [ 1, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 6, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 7, [0,0] ],
+          [ "LOAD", "n", "ll", 2, 1, [19,10] ],
+          [ "AND", "n", "llc", 3, 2, 0, [19,10] ],
+          [ "XOR", "n", "llc", 4, 3, 3, [19,9] ],
+          [ "COPY", "n", "ll", 5, 4, [19,7] ],
+          [ "STORE", "n", "ll", 0, 5, [19,7] ],
+          [ "RET", "n", [20,1] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "hop", [22,1] ],
+    "parameters": [
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 1, [25,9] ],
+      [ 1, [25,9] ],
+      [ 1, [25,15] ],
+      [ 1, [25,15] ],
+      [ 1, [25,21] ],
+      [ 1, [25,21] ],
+      [ 1, [25,20] ],
+      [ 1, [0,0] ],
+      [ 1, [0,0] ],
+      [ 1, [25,7] ],
+      [ 1, [0,0] ],
+      [ 1, [0,0] ],
+      [ 1, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 13, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 14, [0,0] ],
+          [ "ADDRESS", "n", "ll", 2, 15, [0,0] ],
+          [ "LOAD", "n", "ll", 3, 0, [25,9] ],
+          [ "AND", "n", "llc", 4, 3, 0, [25,9] ],
+          [ "BRANCH", "n", "l", 4, [25,11] ]
+        ],
+        "successors": [ 7, 1 ]
+      },
+      {
+        "instructions": [
+          [ "LOAD", "n", "ll", 5, 1, [25,15] ],
+          [ "AND", "n", "llc", 6, 5, 0, [25,15] ],
+          [ "BRANCH", "n", "l", 6, [25,17] ]
+        ],
+        "successors": [ 2, 5 ]
+      },
+      {
+        "instructions": [
+          [ "LOAD", "n", "ll", 7, 2, [25,21] ],
+          [ "AND", "n", "llc", 8, 7, 0, [25,21] ],
+          [ "XOR", "n", "llc", 9, 8, 3, [25,20] ],
+          [ "JUMP", "n", [25,17] ]
+        ],
+        "successors": [ 6 ]
+      },
+      {
+        "instructions": [
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 8 ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "ll", 12, 11, [25,7] ],
+          [ "STORE", "n", "ll", 0, 12, [25,7] ],
+          [ "RET", "n", [26,1] ]
+        ],
+        "successors": [ ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "lc", 10, 3, [0,0] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 3 ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "ll", 10, 9, [0,0] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 3 ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "lc", 11, 1, [0,0] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 4 ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "ll", 11, 10, [0,0] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 4 ]
+      }
+    ]
+  },
+  {
+    "name": [ "hoi", [28,1] ],
+    "parameters": [
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 4, [31,13] ],
+      [ 1, [0,0] ],
+      [ 4, [0,0] ],
+      [ 4, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 4, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 5, [0,0] ],
+          [ "LOAD", "n", "ll", 2, 0, [31,13] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 1 ]
+      },
+      {
+        "instructions": [
+          [ "EQUAL", "u", "llc", 3, 2, 2, [0,0] ],
+          [ "BRANCH", "n", "l", 3, [0,0] ]
+        ],
+        "successors": [ 3, 2 ]
+      },
+      {
+        "instructions": [
+          [ "STORE", "n", "lc", 1, 2, [34,15] ],
+          [ "JUMP", "n", [35,13] ]
+        ],
+        "successors": [ 5 ]
+      },
+      {
+        "instructions": [
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 4 ]
+      },
+      {
+        "instructions": [
+          [ "STORE", "n", "lc", 1, 4, [37,15] ],
+          [ "JUMP", "n", [38,13] ]
+        ],
+        "successors": [ 5 ]
+      },
+      {
+        "instructions": [
+          [ "RET", "n", [40,1] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "huh", [42,1] ],
+    "parameters": [
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 4, [45,10] ],
+      [ 4, [45,14] ],
+      [ 1, [45,12] ],
+      [ 4, [45,19] ],
+      [ 4, [45,23] ],
+      [ 4, [45,9] ],
+      [ 4, [0,0] ],
+      [ 4, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 8, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 9, [0,0] ],
+          [ "LOAD", "n", "ll", 2, 0, [45,10] ],
+          [ "LOAD", "n", "ll", 3, 1, [45,14] ],
+          [ "LESS", "s", "lll", 4, 2, 3, [45,12] ],
+          [ "BRANCH", "n", "l", 4, [45,9] ]
+        ],
+        "successors": [ 2, 1 ]
+      },
+      {
+        "instructions": [
+          [ "LOAD", "n", "ll", 5, 0, [45,19] ],
+          [ "JUMP", "n", [45,9] ]
+        ],
+        "successors": [ 4 ]
+      },
+      {
+        "instructions": [
+          [ "LOAD", "n", "ll", 6, 1, [45,23] ],
+          [ "JUMP", "n", [45,9] ]
+        ],
+        "successors": [ 5 ]
+      },
+      {
+        "instructions": [
+          [ "STORE", "n", "ll", 1, 7, [45,7] ],
+          [ "RET", "n", [46,1] ]
+        ],
+        "successors": [ ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "ll", 7, 5, [0,0] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 3 ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "ll", 7, 6, [0,0] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 3 ]
+      }
+    ]
+  },
+  {
+    "name": [ "bar", [48,1] ],
+    "parameters": [
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 4, [52,9] ],
+      [ 4, [52,13] ],
+      [ 1, [52,11] ],
+      [ 4, [52,18] ],
+      [ 4, [52,22] ],
+      [ 1, [52,20] ],
+      [ 1, [0,0] ],
+      [ 1, [52,7] ],
+      [ 4, [0,0] ],
+      [ 4, [0,0] ],
+      [ 1, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 11, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 12, [0,0] ],
+          [ "ADDRESS", "n", "ll", 2, 13, [0,0] ],
+          [ "LOAD", "n", "ll", 3, 0, [52,9] ],
+          [ "LOAD", "n", "ll", 4, 1, [52,13] ],
+          [ "LESS", "s", "lll", 5, 3, 4, [52,11] ],
+          [ "BRANCH", "n", "l", 5, [52,15] ]
+        ],
+        "successors": [ 1, 3 ]
+      },
+      {
+        "instructions": [
+          [ "LOAD", "n", "ll", 6, 1, [52,18] ],
+          [ "LOAD", "n", "ll", 7, 0, [52,22] ],
+          [ "LESS", "s", "lll", 8, 6, 7, [52,20] ],
+          [ "JUMP", "n", [52,15] ]
+        ],
+        "successors": [ 4 ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "ll", 10, 9, [52,7] ],
+          [ "STORE", "n", "ll", 2, 10, [52,7] ],
+          [ "RET", "n", [53,1] ]
+        ],
+        "successors": [ ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "lc", 9, 3, [0,0] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 2 ]
+      },
+      {
+        "instructions": [
+          [ "COPY", "n", "ll", 9, 8, [0,0] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 2 ]
+      }
+    ]
+  },
+  {
+    "name": [ "foo", [55,1] ],
+    "parameters": [
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 4, [58,9] ],
+      [ 4, [58,13] ],
+      [ 1, [58,11] ],
+      [ 4, [58,18] ],
+      [ 4, [58,22] ],
+      [ 1, [58,20] ],
+      [ 4, [59,13] ],
+      [ 4, [61,13] ],
+      [ 4, [0,0] ],
+      [ 4, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 10, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 11, [0,0] ],
+          [ "LOAD", "n", "ll", 2, 0, [58,9] ],
+          [ "LOAD", "n", "ll", 3, 1, [58,13] ],
+          [ "LESS", "s", "lll", 4, 2, 3, [58,11] ],
+          [ "BRANCH", "n", "l", 4, [58,15] ]
+        ],
+        "successors": [ 1, 2 ]
+      },
+      {
+        "instructions": [
+          [ "LOAD", "n", "ll", 5, 1, [58,18] ],
+          [ "LOAD", "n", "ll", 6, 0, [58,22] ],
+          [ "LESS", "s", "lll", 7, 5, 6, [58,20] ],
+          [ "BRANCH", "n", "l", 7, [58,9] ]
+        ],
+        "successors": [ 3, 2 ]
+      },
+      {
+        "instructions": [
+          [ "LOAD", "n", "ll", 8, 1, [59,13] ],
+          [ "STORE", "n", "ll", 0, 8, [59,11] ],
+          [ "JUMP", "n", [59,9] ]
+        ],
+        "successors": [ 4 ]
+      },
+      {
+        "instructions": [
+          [ "LOAD", "n", "ll", 9, 0, [61,13] ],
+          [ "STORE", "n", "ll", 1, 9, [61,11] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 4 ]
+      },
+      {
+        "instructions": [
+          [ "RET", "n", [62,1] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "main", [64,1] ],
+    "parameters": [
+      [ 8, [64,1] ]
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 2, [67,9] ],
+      [ 4, [67,9] ],
+      [ 2, [67,13] ],
+      [ 4, [67,13] ],
+      [ 1, [67,11] ],
+      [ 2, [68,13] ],
+      [ 2, [70,13] ],
+      [ 4, [0,0] ],
+      [ 2, [0,0] ],
+      [ 2, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 10, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 11, [0,0] ],
+          [ "ADDRESS", "n", "ll", 2, 12, [0,0] ],
+          [ "STORE", "n", "lc", 0, 2, [0,0] ],
+          [ "LOAD", "n", "ll", 3, 1, [67,9] ],
+          [ "EXTEND", "u", "ll", 4, 3, [67,9] ],
+          [ "LOAD", "n", "ll", 5, 2, [67,13] ],
+          [ "EXTEND", "u", "ll", 6, 5, [67,13] ],
+          [ "LESS", "s", "lll", 7, 4, 6, [67,11] ],
+          [ "BRANCH", "n", "l", 7, [67,9] ]
+        ],
+        "successors": [ 2, 1 ]
+      },
+      {
+        "instructions": [
+          [ "LOAD", "n", "ll", 8, 2, [68,13] ],
+          [ "STORE", "n", "ll", 1, 8, [68,11] ],
+          [ "JUMP", "n", [68,9] ]
+        ],
+        "successors": [ 3 ]
+      },
+      {
+        "instructions": [
+          [ "LOAD", "n", "ll", 9, 1, [70,13] ],
+          [ "STORE", "n", "ll", 2, 9, [70,11] ],
+          [ "JUMP", "n", [0,0] ]
+        ],
+        "successors": [ 3 ]
+      },
+      {
+        "instructions": [
+          [ "STORE", "n", "pc", 0, 2, [71,5] ],
+          [ "RET", "n", [71,5] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  }
+],
+"external_variables": [
+],
+"external_functions": [
+]
+}
