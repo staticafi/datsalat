@@ -16,36 +16,19 @@ class Salat:
                                             "under the directory of this script. So, use the relative path from within "
                                             "that directory. If your path targets a directory, then all benchmarks inside "
                                             "will be processed.")
+        parser.add_argument("--salac_dir", help="The directory with the binaries of the salac compiler.")
+        parser.add_argument("--salat_dir", help="The directory with the binaries of the salat testing tools.")
+        parser.add_argument("--output_dir", help="The directory for storing the results.")
         parser.add_argument("--verbose", action='store_true', help="Enables the verbose mode.")
         self.args = parser.parse_args()
 
         self.python_binary = os.path.normpath(sys.executable)
+        self.benchmarks_dir = os.path.normpath(os.path.dirname(os.path.abspath(__file__)))
+        self.salac_script = os.path.normpath(os.path.join(self.args.salac_dir, "salac.py"))
+        self.test_interpretation = os.path.normpath(os.path.join(self.args.salat_dir, "test_interpretation"))
+        self.test_input_flow = os.path.normpath(os.path.join(self.args.salat_dir, "test_input_flow"))
+        self.output_root_dir = os.path.normpath(self.args.output_dir)
 
-        self.salat_dir = os.path.normpath(os.path.dirname(os.path.abspath(__file__)))
-
-        self.salac_script = os.path.normpath(os.path.join(self.salat_dir, "..", "salac.py"))
-        if not os.path.isfile(self.salac_script):
-            self.salac_script = os.path.normpath(os.path.join(self.salat_dir, "..", "dist", "salac.py"))
-            ASSUMPTION(os.path.isfile(self.salac_script), "The salac.py not found. It should be under the 'dist' directory. "
-                                                          "Build and install the project first.")
-
-        self.test_interpretation = os.path.normpath(os.path.join(self.salat_dir, "..", "test_interpretation"))
-        if not os.path.isfile(self.test_interpretation):
-            self.test_interpretation = os.path.normpath(os.path.join(self.salat_dir, "..", "dist", "test_interpretation"))
-            if not os.path.isfile(self.test_interpretation):
-                self.test_interpretation = None
-
-        self.test_input_flow = os.path.normpath(os.path.join(self.salat_dir, "..", "test_input_flow"))
-        if not os.path.isfile(self.test_input_flow):
-            self.test_input_flow = os.path.normpath(os.path.join(self.salat_dir, "..", "dist", "test_input_flow"))
-            if not os.path.isfile(self.test_input_flow):
-                self.test_input_flow = None
-
-        self.benchmarks_dir = os.path.join(os.path.dirname(self.salac_script), "benchmarks")
-        ASSUMPTION(os.path.isdir(self.benchmarks_dir), "The 'benchmarks' directory not found. It should be under the 'dist' directory. "
-                                                       "Build and install the project first.")
-
-        self.output_root_dir = os.path.normpath(os.path.join(os.path.dirname(self.salac_script), "output"))
         os.makedirs(self.output_root_dir, exist_ok=True)
 
     def collect_benchmarks(self, relative_path : str) -> list[str]:
