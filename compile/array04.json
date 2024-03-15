@@ -1,0 +1,112 @@
+{
+"magic": "sala",
+"version": "0.1",
+"system": "x86_64-pc-linux-gnu",
+"num_cpu_bits": 64,
+"name": "array04",
+"entry_function": 1,
+"constants": [
+  "00000000",
+  "0400000000000000",
+  "0100000000000000",
+  "0000000000000000"
+],
+"static": [
+],
+"functions": [
+  {
+    "name": [ "__sala_static_initializer__", [0,0] ],
+    "parameters": [
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [0,0] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "main", [5,1] ],
+    "parameters": [
+      [ 8, [5,1] ]
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 4, [6,16] ],
+      [ 4, [7,14] ],
+      [ 8, [7,14] ],
+      [ 8, [7,14] ],
+      [ 8, [7,14] ],
+      [ 8, [7,14] ],
+      [ 4, [8,11] ],
+      [ 4, [9,12] ],
+      [ 8, [9,3] ],
+      [ 8, [9,3] ],
+      [ 4, [0,0] ],
+      [ 4, [0,0] ],
+      [ 8, [0,0] ],
+      [ 4, [0,0] ],
+      [ 8, [6,16] ],
+      [ 8, [8,11] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 14, [0,0] ],
+          [ "ADDRESS", "n", "ll", 1, 15, [0,0] ],
+          [ "ADDRESS", "n", "ll", 2, 16, [0,0] ],
+          [ "ADDRESS", "n", "ll", 3, 17, [0,0] ],
+          [ "STORE", "n", "lc", 0, 0, [0,0] ],
+          [ "ADDRESS", "n", "ll", 18, 4, [6,16] ],
+          [ "CALL", "n", "fl", 2, 18, [6,16] ],
+          [ "STORE", "n", "ll", 1, 4, [6,7] ],
+          [ "LOAD", "n", "ll", 5, 1, [7,14] ],
+          [ "EXTEND", "s", "ll", 6, 5, [7,14] ],
+          [ "MUL", "u", "llc", 7, 6, 1, [7,14] ],
+          [ "ALLOCA", "n", "llc", 8, 7, 2, [7,14] ],
+          [ "COPY", "n", "ll", 9, 8, [7,14] ],
+          [ "STORE", "n", "ll", 2, 9, [7,8] ],
+          [ "ADDRESS", "n", "ll", 19, 10, [8,11] ],
+          [ "CALL", "n", "fl", 2, 19, [8,11] ],
+          [ "STORE", "n", "ll", 3, 10, [8,7] ],
+          [ "LOAD", "n", "ll", 11, 3, [9,12] ],
+          [ "LOAD", "n", "ll", 12, 2, [9,3] ],
+          [ "COPY", "n", "ll", 13, 12, [9,3] ],
+          [ "STORE", "n", "ll", 13, 11, [9,10] ],
+          [ "STORE", "n", "pc", 0, 0, [10,3] ],
+          [ "RET", "n", [10,3] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "__VERIFIER_nondet_int", [0,0] ],
+    "parameters": [
+      [ 8, [0,0] ]
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [0,0] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  }
+],
+"external_variables": [
+],
+"external_functions": [
+  2
+]
+}

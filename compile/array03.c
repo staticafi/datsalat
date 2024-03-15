@@ -39,3 +39,5 @@ void foo(int n)
         char C[n];
     }
 }
+
+void main() {}

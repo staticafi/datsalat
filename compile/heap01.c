@@ -39,3 +39,5 @@ void* zul(void* d, void* s, size_t n)
 {
     return memmove(d,s,n); // returns d.
 }
+
+void main() {}

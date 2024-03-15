@@ -22,3 +22,5 @@ void huh()
     fn = (int (*)(char))&bar;
     x = (*fn)('A');
 }
+
+void main() {}

@@ -4,7 +4,7 @@
 "system": "x86_64-pc-linux-gnu",
 "num_cpu_bits": 64,
 "name": "heap01",
-"entry_function": 0,
+"entry_function": 12,
 "constants": [
 ],
 "static": [
@@ -353,6 +353,21 @@
           [ "MEMMOVE", "n", "lll", 3, 4, 5, [40,12] ],
           [ "STORE", "n", "pl", 0, 3, [40,5] ],
           [ "RET", "n", [40,5] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "main", [43,1] ],
+    "parameters": [
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [43,14] ]
         ],
         "successors": [ ]
       }

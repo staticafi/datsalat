@@ -4,7 +4,7 @@
 "system": "x86_64-pc-linux-gnu",
 "num_cpu_bits": 64,
 "name": "array03",
-"entry_function": 0,
+"entry_function": 5,
 "constants": [
   "0100000000000000",
   "0000000000000000",
@@ -294,6 +294,21 @@
           [ "LOAD", "n", "ll", 27, 1, [41,1] ],
           [ "STACKRESTORE", "n", "l", 27, [41,1] ],
           [ "RET", "n", [41,1] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "main", [43,1] ],
+    "parameters": [
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [43,14] ]
         ],
         "successors": [ ]
       }

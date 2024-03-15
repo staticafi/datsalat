@@ -4,7 +4,7 @@
 "system": "x86_64-pc-linux-gnu",
 "num_cpu_bits": 64,
 "name": "func_call05",
-"entry_function": 0,
+"entry_function": 5,
 "constants": [
   "41"
 ],
@@ -124,6 +124,21 @@
           [ "CALL", "n", "llc", 3, 7, 0, [23,9] ],
           [ "STORE", "n", "ll", 0, 4, [23,7] ],
           [ "RET", "n", [24,1] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "main", [26,1] ],
+    "parameters": [
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "RET", "n", [26,14] ]
         ],
         "successors": [ ]
       }
