@@ -1,0 +1,79 @@
+{
+"magic": "sala",
+"version": "0.1",
+"system": "x86_64-pc-linux-gnu",
+"num_cpu_bits": 64,
+"name": "constexpr_icmp",
+"entry_function": 1,
+"constants": [
+  "2d2d00",
+  "abababababababab",
+  "0000000000000000",
+  "0100000000000000",
+  "0000000000000000",
+  "0100000000000000"
+],
+"static": [
+],
+"functions": [
+  {
+    "name": [ "__sala_static_initializer__", [0,0] ],
+    "parameters": [
+    ],
+    "locals": [
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "cc", 1, 0, [0,0] ],
+          [ "RET", "n", [0,0] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "main", [1,1] ],
+    "parameters": [
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 1, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "MOVEPTR", "n", "lccc", 0, 1, 3, 3, [0,0] ],
+          [ "P2I", "u", "ll", 1, 0, [0,0] ],
+          [ "P2I", "u", "lc", 2, 1, [0,0] ],
+          [ "SUB", "u", "lcl", 3, 4, 2, [0,0] ],
+          [ "ADD", "u", "lll", 4, 1, 3, [0,0] ],
+          [ "EQUAL", "u", "llc", 5, 4, 5, [0,0] ],
+          [ "BRANCH", "n", "l", 5, [3,8] ]
+        ],
+        "successors": [ 1, 2 ]
+      },
+      {
+        "instructions": [
+          [ "JUMP", "n", [3,80] ]
+        ],
+        "successors": [ 2 ]
+      },
+      {
+        "instructions": [
+          [ "RET", "n", [4,1] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  }
+],
+"external_variables": [
+],
+"external_functions": [
+]
+}
