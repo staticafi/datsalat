@@ -19,6 +19,7 @@ class Salat:
         parser.add_argument("--salac_dir", help="The directory with the binaries of the salac compiler.")
         parser.add_argument("--salat_dir", help="The directory with the binaries of the salat testing tools.")
         parser.add_argument("--output_dir", help="The directory for storing the results.")
+        parser.add_argument("--m32", action='store_true', help="Enables the 32-bit CPU model for the benchmarks.")
         parser.add_argument("--verbose", action='store_true', help="Enables the verbose mode.")
         self.args = parser.parse_args()
 
@@ -73,6 +74,7 @@ class Salat:
                 self.python_binary,
                 self.salac_script,
                 "--jsonx",
+                "--m32" if self.args.m32 else "",
                 "--verbose" if self.args.verbose else "",
                 "--input", benchmark,
                 "--output", output_dir
@@ -114,6 +116,7 @@ class Salat:
                     self.python_binary,
                     self.salac_script,
                     "--jsonx",
+                    "--m32" if self.args.m32 else "",
                     "--verbose" if self.args.verbose else "",
                     "--input", benchmark,
                     "--output", output_dir
@@ -152,6 +155,7 @@ class Salat:
                     self.python_binary,
                     self.salac_script,
                     "--jsonx",
+                    "--m32" if self.args.m32 else "",
                     "--verbose" if self.args.verbose else "",
                     "--input", benchmark,
                     "--output", output_dir
