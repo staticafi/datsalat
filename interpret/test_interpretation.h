@@ -4,7 +4,7 @@
 #define READ(T) __sala_testing_read_##T(__LINE__)
 #define WRITE(T,V) __sala_testing_write_##T(__LINE__, V)
 #define HIT() __sala_testing_loc_hit(__LINE__)
-#define RET(V) do { __sala_testing_main_return(__LINE__, V); return V; } while(0)
+#define RET(V) return __sala_testing_main_return(__LINE__, V)
 
 #define EXIT(V) exit(V)
 #define ABORT() abort()
@@ -30,7 +30,7 @@ extern int atexit(void (*func)(void));
 extern void abort(void);
 
 extern void __sala_testing_loc_hit(int32_t id);
-extern void __sala_testing_main_return(int32_t id, int32_t value);
+extern int __sala_testing_main_return(int32_t id, int32_t value);
 extern void __sala_testing_crash(int32_t id, int32_t exit_code);
 
 extern _Bool __sala_testing_read_bool(int32_t id);
