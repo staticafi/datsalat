@@ -4,13 +4,13 @@
 #define READ(T) __sala_testing_read_##T(__LINE__)
 #define WRITE(T,V) __sala_testing_write_##T(__LINE__, V)
 #define HIT() __sala_testing_loc_hit(__LINE__)
-#define RET(V) return V
+#define RET(V) do { __sala_testing_main_return(__LINE__, V); return V; } while(0)
 
 #define EXIT(V) exit(V)
 #define ABORT() abort()
 #define __ASSERT_FAIL(A,B,C,D) __assert_fail(A,B,C,D)
-#define CRASH(V)
-#define CRASHX(V)
+#define CRASH(V) do { __sala_testing_crash(__LINE__, V); abort(); } while(0)
+#define CRASHX(V) CRASH(V)
 
 #define __VERIFIER_nondet_char() READ(s8)
 #define __VERIFIER_nondet_short() READ(s16)
@@ -30,6 +30,8 @@ extern int atexit(void (*func)(void));
 extern void abort(void);
 
 extern void __sala_testing_loc_hit(int32_t id);
+extern void __sala_testing_main_return(int32_t id, int32_t value);
+extern void __sala_testing_crash(int32_t id, int32_t exit_code);
 
 extern _Bool __sala_testing_read_bool(int32_t id);
 extern int8_t __sala_testing_read_s8(int32_t id);
