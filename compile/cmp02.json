@@ -276,12 +276,6 @@
           [ "STORE", "n", "lc", 1, 2, [34,15] ],
           [ "JUMP", "n", [35,13] ]
         ],
-        "successors": [ 5 ]
-      },
-      {
-        "instructions": [
-          [ "JUMP", "n", [0,0] ]
-        ],
         "successors": [ 4 ]
       },
       {
@@ -289,7 +283,7 @@
           [ "STORE", "n", "lc", 1, 4, [37,15] ],
           [ "JUMP", "n", [38,13] ]
         ],
-        "successors": [ 5 ]
+        "successors": [ 4 ]
       },
       {
         "instructions": [
