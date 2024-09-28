@@ -73,7 +73,7 @@ class Salat:
         if self._execute([
                 self.python_binary,
                 self.salac_script,
-                "--jsonx",
+                "--jsonc",
                 "--m32" if self.args.m32 else "",
                 "--verbose" if self.args.verbose else "",
                 "--input", benchmark,
@@ -115,7 +115,7 @@ class Salat:
             if self._execute([
                     self.python_binary,
                     self.salac_script,
-                    "--jsonx",
+                    "--jsonc",
                     "--m32" if self.args.m32 else "",
                     "--verbose" if self.args.verbose else "",
                     "--input", benchmark,
@@ -154,7 +154,7 @@ class Salat:
             if self._execute([
                     self.python_binary,
                     self.salac_script,
-                    "--jsonx",
+                    "--jsonc",
                     "--m32" if self.args.m32 else "",
                     "--verbose" if self.args.verbose else "",
                     "--input", benchmark,
