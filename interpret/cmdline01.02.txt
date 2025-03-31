@@ -1,0 +1,3 @@
+arg:a.out
+arg:--help
+n 7 01000000

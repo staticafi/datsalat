@@ -3,6 +3,7 @@
 
 #define READ(T) __sala_testing_read_##T(__LINE__)
 #define WRITE(T,V) __sala_testing_write_##T(__LINE__, V)
+#define WRITE_ARGS(...)
 #define HIT() __sala_testing_loc_hit(__LINE__)
 #define RET(V) return __sala_testing_main_return(__LINE__, V)
 
