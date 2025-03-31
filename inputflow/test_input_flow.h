@@ -1,6 +1,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 
+#define TAINT_ARGS(...)
+
 #define __VERIFIER_nondet_char() __sala_testing_start_flow_with_s8()
 #define __VERIFIER_nondet_short() __sala_testing_start_flow_with_s16()
 #define __VERIFIER_nondet_int() __sala_testing_start_flow_with_s32()
