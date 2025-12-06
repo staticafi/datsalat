@@ -1,0 +1,77 @@
+{
+"magic": "sala",
+"version": "0.1",
+"system": "x86_64-pc-linux-gnu",
+"num_cpu_bits": 64,
+"name": "gptr2int",
+"entry_function": 1,
+"constants": [
+  "abababababababab",
+  "cdcdcdcdcdcdcdcd",
+  "abababababababab",
+  "00000000"
+],
+"static": [
+  [ 8, [0,0] ],
+  [ 8, [0,0] ],
+  [ 8, [0,0] ],
+  [ 8, [0,0] ]
+],
+"functions": [
+  {
+    "name": [ "__sala_static_initializer__", [0,0] ],
+    "parameters": [
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [0,0] ],
+      [ 8, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ss", 0, 1, [0,0] ],
+          [ "ADDRESS", "n", "ss", 2, 3, [0,0] ],
+          [ "ADDRESS", "n", "lc", 0, 0, [0,0] ],
+          [ "ADDRESS", "n", "cc", 2, 1, [0,0] ],
+          [ "COPY", "n", "lc", 2, 2, [0,0] ],
+          [ "P2I", "u", "ls", 3, 0, [0,0] ],
+          [ "STORE", "n", "ll", 2, 3, [0,0] ],
+          [ "COPY", "n", "lc", 1, 2, [0,0] ],
+          [ "STORE", "n", "ll", 0, 1, [0,0] ],
+          [ "STORE", "n", "sc", 2, 0, [0,0] ],
+          [ "RET", "n", [0,0] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  },
+  {
+    "name": [ "main", [5,1] ],
+    "parameters": [
+      [ 8, [5,1] ]
+    ],
+    "locals": [
+      [ 8, [0,0] ],
+      [ 4, [0,0] ]
+    ],
+    "basic_blocks": [
+      {
+        "instructions": [
+          [ "ADDRESS", "n", "ll", 0, 1, [0,0] ],
+          [ "STORE", "n", "lc", 0, 3, [0,0] ],
+          [ "STORE", "n", "pc", 0, 3, [7,5] ],
+          [ "RET", "n", [7,5] ]
+        ],
+        "successors": [ ]
+      }
+    ]
+  }
+],
+"external_variables": [
+  [ 1, "__crc_w1_ds2760_read" ]
+],
+"external_functions": [
+]
+}
