@@ -9,6 +9,7 @@
   "abababababababab",
   "cdcdcdcdcdcdcdcd",
   "abababababababab",
+  "0800000000000000",
   "00000000"
 ],
 "static": [
@@ -26,6 +27,7 @@
       [ 8, [0,0] ],
       [ 8, [0,0] ],
       [ 8, [0,0] ],
+      [ 8, [0,0] ],
       [ 8, [0,0] ]
     ],
     "basic_blocks": [
@@ -40,7 +42,8 @@
           [ "STORE", "n", "ll", 2, 3, [0,0] ],
           [ "COPY", "n", "lc", 1, 2, [0,0] ],
           [ "STORE", "n", "ll", 0, 1, [0,0] ],
-          [ "STORE", "n", "sc", 2, 0, [0,0] ],
+          [ "ADDRESS", "n", "lc", 4, 0, [0,0] ],
+          [ "MEMCPY", "n", "slc", 2, 4, 3, [0,0] ],
           [ "RET", "n", [0,0] ]
         ],
         "successors": [ ]
@@ -60,8 +63,8 @@
       {
         "instructions": [
           [ "ADDRESS", "n", "ll", 0, 1, [0,0] ],
-          [ "STORE", "n", "lc", 0, 3, [0,0] ],
-          [ "STORE", "n", "pc", 0, 3, [7,5] ],
+          [ "STORE", "n", "lc", 0, 4, [0,0] ],
+          [ "STORE", "n", "pc", 0, 4, [7,5] ],
           [ "RET", "n", [7,5] ]
         ],
         "successors": [ ]
